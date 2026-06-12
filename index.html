@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Editor Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#000;
+color:#fff;
+display:flex;
+}
+
+.sidebar{
+position:fixed;
+left:20px;
+top:50%;
+transform:translateY(-50%);
+width:230px;
+background:#f3f0e8;
+color:#1d4f91;
+padding:25px;
+border-radius:18px;
+}
+
+.logo{
+font-size:42px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.profile{
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+.name{
+font-weight:700;
+margin-bottom:5px;
+}
+
+.role{
+font-size:13px;
+margin-bottom:25px;
+}
+
+.nav{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.nav a{
+text-decoration:none;
+color:#1d4f91;
+font-weight:600;
+}
+
+.main{
+margin-left:320px;
+width:100%;
+padding:60px;
+}
+
+.section-title{
+font-size:80px;
+font-weight:800;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+position:relative;
+overflow:hidden;
+border-radius:14px;
+height:500px;
+cursor:pointer;
+}
+
+.card img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.4s;
+}
+
+.card:hover img{
+transform:scale(1.05);
+}
+
+.overlay{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+padding:25px;
+background:linear-gradient(
+transparent,
+rgba(0,0,0,.9)
+);
+}
+
+.category{
+font-size:12px;
+letter-spacing:2px;
+color:#ccc;
+}
+
+.project{
+font-size:28px;
+font-weight:700;
+margin-top:8px;
+}
+
+.contact{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+.contact h2{
+font-size:80px;
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:22px;
+color:#aaa;
+margin-bottom:25px;
+}
+
+.contact-info{
+display:flex;
+flex-direction:column;
+gap:18px;
+font-size:22px;
+}
+
+.badge{
+margin-top:40px;
+padding:15px 30px;
+border:1px solid #333;
+border-radius:50px;
+}
+
+@media(max-width:900px){
+
+body{
+display:block;
+}
+
+.sidebar{
+position:relative;
+left:auto;
+top:auto;
+transform:none;
+width:90%;
+margin:20px auto;
+}
+
+.main{
+margin-left:0;
+padding:20px;
+}
+
+.section-title{
+font-size:50px;
+}
+
+.contact h2{
+font-size:50px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">EDITOR</div>
+
+<img src="profile.jpg" class="profile">
+
+<div class="name">John Mathew</div>
+<div class="role">Video Editor & Motion Artist</div>
+
+<div class="nav">
+<a href="#works">WORKS</a>
+<a href="#contact">CONTACT</a>
+<a href="#">SHOP</a>
+</div>
+
+</div>
+
+<div class="main">
+
+<section id="works">
+
+<h1 class="section-title">WORKS</h1>
+
+<div class="grid">
+
+<div class="card">
+<img src="work1.jpg">
+<div class="overlay">
+<div class="category">MOTION & VFX</div>
+<div class="project">KALYANI LYRIC VIDEO</div>
+</div>
+</div>
+
+<div class="card">
+<img src="work2.jpg">
+<div class="overlay">
+<div class="category">MOTION & VFX</div>
+<div class="project">JALEBI BABY</div>
+</div>
+</div>
+
+<div class="card">
+<img src="work3.jpg">
+<div class="overlay">
+<div class="category">VISUAL ART</div>
+<div class="project">ARTWORK PROJECT</div>
+</div>
+</div>
+
+<div class="card">
+<img src="work4.jpg">
+<div class="overlay">
+<div class="category">REEL</div>
+<div class="project">BEACH REEL</div>
+</div>
+</div>
+
+<div class="card">
+<img src="work5.jpg">
+<div class="overlay">
+<div class="category">REEL</div>
+<div class="project">GYM REEL</div>
+</div>
+</div>
+
+<div class="card">
+<img src="work6.jpg">
+<div class="overlay">
+<div class="category">COMMERCIAL</div>
+<div class="project">PROMO VIDEO</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>CONTACT ME</h2>
+
+<p>Video Editor, Motion Graphics & VFX Artist</p>
+
+<div class="contact-info">
+<div>editor@gmail.com</div>
+<div>@instagramhandle</div>
+<div>Kochi, India</div>
+</div>
+
+<div class="badge">
+🟢 AVAILABLE FOR PROJECTS
+</div>
+
+</section>
+
+</div>
+
+</body>
+</html>
+ssh -o ServerAliveInterval=60 -o ServerAliveCountMax=3 -i mykey.pem ec2-user@44.236.70.239
