@@ -51,22 +51,21 @@ border-radius:20px;
 
 .profile-overlay{
     position:absolute;
-    bottom:30px;
-    left:30px;
+    left:38px;
+    bottom:18px;
     display:flex;
     flex-direction:column;
-    gap:10px;
+    gap:4px;
 }
 
 .profile-overlay a{
     text-decoration:none;
-    color:#d8d8d8;
-    font-size:22px;
+    color:#c93a3a;
+    font-size:20px;
     font-weight:800;
-    letter-spacing:-1px;
     text-transform:uppercase;
-    text-shadow:
-        0 2px 4px rgba(0,0,0,.35);
+    text-shadow:none;
+    font-family:serif;
 }
 
 .profile-overlay a:hover{
@@ -76,7 +75,7 @@ opacity:.8;
 /* MAIN */
 
 .main{
-margin-left:480px;
+margin-left:420px;
 width:100%;
 padding:60px;
 }
@@ -89,7 +88,7 @@ margin-bottom:50px;
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+grid-template-columns:repeat(3,1fr);
 gap:30px;
 }
 
@@ -97,7 +96,7 @@ gap:30px;
 position:relative;
 overflow:hidden;
 border-radius:14px;
-height:500px;
+height:420px;
 cursor:pointer;
 }
 
