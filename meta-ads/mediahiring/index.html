@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Em Media Hiring</title>
+
+<link rel="icon" href="../../icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#000;
+color:white;
+font-family:'Inter',sans-serif;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+padding:50px 30px;
+}
+
+.back{
+display:inline-block;
+margin-bottom:40px;
+text-decoration:none;
+color:#c93a3a;
+font-weight:600;
+transition:.3s;
+}
+
+.back:hover{
+color:white;
+}
+
+.hero{
+
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:60px;
+align-items:center;
+
+}
+
+.video-box video{
+
+width:100%;
+border-radius:20px;
+background:#111;
+
+}
+
+.info h1{
+
+font-size:64px;
+margin-bottom:15px;
+
+}
+
+.info p{
+
+color:#999;
+font-size:18px;
+line-height:1.8;
+margin-bottom:40px;
+
+}
+
+.details{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+
+}
+
+.detail{
+
+padding:20px;
+background:#111;
+border-radius:16px;
+border:1px solid #222;
+
+}
+
+.label{
+
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:2px;
+color:#777;
+margin-bottom:8px;
+
+}
+
+.value{
+
+font-size:20px;
+font-weight:700;
+
+}
+
+.gallery{
+
+margin-top:80px;
+
+}
+
+.gallery h2{
+
+font-size:42px;
+margin-bottom:30px;
+
+}
+
+.images{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+
+}
+
+.images img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:16px;
+
+transition:.35s;
+
+}
+
+.images img:hover{
+
+transform:scale(1.03);
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+}
+
+.info h1{
+
+font-size:42px;
+
+}
+
+.details{
+
+grid-template-columns:1fr;
+
+}
+
+.images{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../" class="back">
+
+← Back to Meta Ads
+
+</a>
+
+<div class="hero">
+
+<div class="video-box">
+
+<video controls>
+
+<source src="Media clone ad.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>
