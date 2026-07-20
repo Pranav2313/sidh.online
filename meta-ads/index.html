@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meta Ads | SIDH</title>
+
+<link rel="icon" href="../icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#000;
+color:white;
+font-family:'Inter',sans-serif;
+}
+
+.container{
+width:92%;
+max-width:1500px;
+margin:auto;
+padding:50px 0;
+}
+
+.back{
+display:inline-block;
+color:#c93a3a;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+margin-bottom:30px;
+transition:.3s;
+}
+
+.back:hover{
+color:white;
+}
+
+h1{
+font-size:64px;
+font-weight:800;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#888;
+font-size:20px;
+margin-bottom:50px;
+}
+
+/* PROJECT GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+}
+
+.project-card{
+position:relative;
+overflow:hidden;
+height:380px;
+border-radius:18px;
+text-decoration:none;
+color:white;
+border:1px solid #222;
+transition:.35s;
+background:#111;
+}
+
+.project-card img{
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:.45;
+transition:.4s;
+}
+
+.project-card:hover img{
+transform:scale(1.08);
+opacity:.75;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+border-color:#c93a3a;
+box-shadow:0 15px 35px rgba(201,58,58,.18);
+}
+
+.overlay{
+position:absolute;
+left:0;
+right:0;
+bottom:0;
+padding:25px;
+background:linear-gradient(
+transparent,
+rgba(0,0,0,.9)
+);
+}
+
+.category{
+font-size:12px;
+letter-spacing:2px;
+color:#bbb;
+text-transform:uppercase;
+}
+
+.title{
+font-size:28px;
+font-weight:700;
+margin-top:8px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.container{
+width:90%;
+}
+
+h1{
+font-size:46px;
+}
+
+.subtitle{
+font-size:17px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.project-card{
+height:280px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../" class="back">
+← Back to Portfolio
+</a>
+
+<h1>Meta Ads</h1>
+
+<p class="subtitle">
+Performance advertisements and commercial campaigns.
+</p>
+
+<div class="grid">
+
+<!-- SWEETPUFFS -->
+
+<a href="sweetpuffs/" class="project-card">
+
+<img src="../favicon.png">
+
+<div class="overlay">
+
+<div class="category">
+Meta Advertisement
+</div>
+
+<div class="title">
+SweetPuffs
+</div>
+
+</div>
+
+</a>
+
+<!-- PROJECT 2 -->
+
+<a href="project2/" class="project-card">
+
+<img src="../favicon.png">
+
+<div class="overlay">
+
+<div class="category">
+Meta Advertisement
+</div>
+
+<div class="title">
+Project Two
+</div>
+
+</div>
+
+</a>
+
+<!-- PROJECT 3 -->
+
+<a href="project3/" class="project-card">
+
+<img src="../favicon.png">
+
+<div class="overlay">
+
+<div class="category">
+Meta Advertisement
+</div>
+
+<div class="title">
+Project Three
+</div>
+
+</div>
+
+</a>
+
+<!-- PROJECT 4 -->
+
+<a href="project4/" class="project-card">
+
+<img src="../favicon.png">
+
+<div class="overlay">
+
+<div class="category">
+Meta Advertisement
+</div>
+
+<div class="title">
+Project Four
+</div>
+
+</div>
+
+</a>
+
+<!-- PROJECT 5 -->
+
+<a href="project5/" class="project-card">
+
+<img src="../favicon.png">
+
+<div class="overlay">
+
+<div class="category">
+Meta Advertisement
+</div>
+
+<div class="title">
+Project Five
+</div>
+
+</div>
+
+</a>
+
+<!-- PROJECT 6 -->
+
+<a href="project6/" class="project-card">
+
+<img src="../favicon.png">
+
+<div class="overlay">
+
+<div class="category">
+Meta Advertisement
+</div>
+
+<div class="title">
+Project Six
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
